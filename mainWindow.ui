@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Archiver</class>
+ <widget class="QMainWindow" name="Archiver">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2000</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Archiver</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(239, 239, 239);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,4,8">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>30</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(112, 200, 251);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>SHINE Accelerator Archiver System</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,8">
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="1" column="1">
+            <widget class="QPushButton" name="searchButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 255, 0);</string>
+             </property>
+             <property name="text">
+              <string>Search</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_13">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Start</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QDateTimeEdit" name="dateTimeEdit_start">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_14">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>End</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QDateTimeEdit" name="dateTimeEdit_end">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="plotButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 255, 0);</string>
+             </property>
+             <property name="text">
+              <string>Plot</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_11">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>PV</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QProgressBar" name="progressBar">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+             <property name="textVisible">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6" stretch="4,1">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,1">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="frame">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>2000</width>
+                <height>1000</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4" stretch="5,1">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QTableView" name="curves_tableView">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);
+selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="sizeAdjustPolicy">
+                  <enum>QAbstractScrollArea::AdjustToContents</enum>
+                 </property>
+                 <property name="editTriggers">
+                  <set>QAbstractItemView::DoubleClicked</set>
+                 </property>
+                 <property name="tabKeyNavigation">
+                  <bool>false</bool>
+                 </property>
+                 <property name="showDropIndicator" stdset="0">
+                  <bool>false</bool>
+                 </property>
+                 <property name="dragDropOverwriteMode">
+                  <bool>false</bool>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::SingleSelection</enum>
+                 </property>
+                 <property name="selectionBehavior">
+                  <enum>QAbstractItemView::SelectRows</enum>
+                 </property>
+                 <attribute name="horizontalHeaderCascadingSectionResizes">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="horizontalHeaderHighlightSections">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="horizontalHeaderStretchLastSection">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderVisible">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderDefaultSectionSize">
+                  <number>20</number>
+                 </attribute>
+                 <attribute name="verticalHeaderHighlightSections">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderMinimumSectionSize">
+                  <number>20</number>
+                 </attribute>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_4">
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <property name="lineWidth">
+                  <number>1</number>
+                 </property>
+                 <widget class="QPushButton" name="add_curve_button">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>0</y>
+                    <width>80</width>
+                    <height>26</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Add Curve</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="remove_curve_button">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>0</y>
+                    <width>89</width>
+                    <height>26</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Remove Curve</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="clear_curve_button">
+                  <property name="geometry">
+                   <rect>
+                    <x>200</x>
+                    <y>0</y>
+                    <width>80</width>
+                    <height>26</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Clear Curve</string>
+                  </property>
+                 </widget>
+                 <widget class="QTextEdit" name="textEdit">
+                  <property name="geometry">
+                   <rect>
+                    <x>310</x>
+                    <y>0</y>
+                    <width>201</width>
+                    <height>41</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>2000</width>
+                <height>1000</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5" stretch="5,1">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QTableView" name="axis_tableView">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);
+selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="sizeAdjustPolicy">
+                  <enum>QAbstractScrollArea::AdjustToContents</enum>
+                 </property>
+                 <property name="editTriggers">
+                  <set>QAbstractItemView::DoubleClicked</set>
+                 </property>
+                 <property name="tabKeyNavigation">
+                  <bool>false</bool>
+                 </property>
+                 <property name="showDropIndicator" stdset="0">
+                  <bool>false</bool>
+                 </property>
+                 <property name="dragDropOverwriteMode">
+                  <bool>false</bool>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::SingleSelection</enum>
+                 </property>
+                 <property name="selectionBehavior">
+                  <enum>QAbstractItemView::SelectRows</enum>
+                 </property>
+                 <attribute name="horizontalHeaderCascadingSectionResizes">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="horizontalHeaderHighlightSections">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="horizontalHeaderStretchLastSection">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderVisible">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderDefaultSectionSize">
+                  <number>20</number>
+                 </attribute>
+                 <attribute name="verticalHeaderHighlightSections">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderMinimumSectionSize">
+                  <number>20</number>
+                 </attribute>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_5">
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QPushButton" name="remove_axis_button">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>0</y>
+                    <width>80</width>
+                    <height>26</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Remove Axis</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="add_axis_button">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>0</y>
+                    <width>80</width>
+                    <height>26</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Add Axis</string>
+                  </property>
+                 </widget>
+                 <zorder>add_axis_button</zorder>
+                 <zorder>remove_axis_button</zorder>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame">
+            <property name="maximumSize">
+             <size>
+              <width>3000</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <widget class="QPushButton" name="pushButton1">
+             <property name="geometry">
+              <rect>
+               <x>1</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>30s</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton2">
+             <property name="geometry">
+              <rect>
+               <x>60</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>1m</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton4">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>15m</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton3">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>5m</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton8">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>8h</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton6">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>1h</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton7">
+             <property name="geometry">
+              <rect>
+               <x>360</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>4h</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton5">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>30m</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton12">
+             <property name="geometry">
+              <rect>
+               <x>660</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>2w</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton15">
+             <property name="geometry">
+              <rect>
+               <x>840</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>YTD</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton10">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>2d</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton14">
+             <property name="geometry">
+              <rect>
+               <x>780</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>6M</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton11">
+             <property name="geometry">
+              <rect>
+               <x>600</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>1w</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton16">
+             <property name="geometry">
+              <rect>
+               <x>900</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>1Y</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton13">
+             <property name="geometry">
+              <rect>
+               <x>720</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>1M</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QPushButton" name="pushButton9">
+             <property name="geometry">
+              <rect>
+               <x>480</x>
+               <y>15</y>
+               <width>50</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>1d</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">timeButtonGroup</string>
+             </attribute>
+            </widget>
+            <widget class="QComboBox" name="strategy_comboBox">
+             <property name="geometry">
+              <rect>
+               <x>1150</x>
+               <y>15</y>
+               <width>101</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(0, 170, 255);</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label">
+             <property name="geometry">
+              <rect>
+               <x>1069</x>
+               <y>20</y>
+               <width>81</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Plot Strategy:</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="export_pushButton">
+             <property name="geometry">
+              <rect>
+               <x>1500</x>
+               <y>15</y>
+               <width>101</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string>&lt;=2 weeks</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(85, 170, 255);</string>
+             </property>
+             <property name="text">
+              <string>Export Raw Data</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="export_plot_pushButton">
+             <property name="geometry">
+              <rect>
+               <x>1610</x>
+               <y>15</y>
+               <width>101</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string>&lt;=2 weeks</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(85, 170, 255);</string>
+             </property>
+             <property name="text">
+              <string>Export Plot Data</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_2">
+             <property name="geometry">
+              <rect>
+               <x>959</x>
+               <y>20</y>
+               <width>41</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Live:</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="live_comboBox">
+             <property name="geometry">
+              <rect>
+               <x>989</x>
+               <y>15</y>
+               <width>61</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(0, 170, 255);</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="x_axis_comboBox">
+             <property name="geometry">
+              <rect>
+               <x>1340</x>
+               <y>15</y>
+               <width>141</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(0, 170, 255);</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_3">
+             <property name="geometry">
+              <rect>
+               <x>1270</x>
+               <y>20</y>
+               <width>71</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Correlation:</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>searchButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Archiver</receiver>
+   <slot>searchButton_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>115</x>
+     <y>420</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>plotButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Archiver</receiver>
+   <slot>plotButton_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>396</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add_axis_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Archiver</receiver>
+   <slot>addAxis()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1204</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1653</x>
+     <y>398</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>remove_axis_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Archiver</receiver>
+   <slot>removeSelectedAxis()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1294</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1663</x>
+     <y>459</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>remove_curve_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Archiver</receiver>
+   <slot>removeSelectedCurve()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>442</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>795</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add_curve_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Archiver</receiver>
+   <slot>addCurve()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>343</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>711</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clear_curve_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Archiver</receiver>
+   <slot>clearCurve()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>533</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>879</x>
+     <y>528</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>strategy_comboBox</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Archiver</receiver>
+   <slot>chooseStrategy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1663</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1336</x>
+     <y>508</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>export_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Archiver</receiver>
+   <slot>exportData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1772</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1456</x>
+     <y>560</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>export_plot_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Archiver</receiver>
+   <slot>exportPlotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1882</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1757</x>
+     <y>336</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>live_comboBox</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Archiver</receiver>
+   <slot>chooseLiveTime()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1419</x>
+     <y>357</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1181</x>
+     <y>437</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>searchButton_click()</slot>
+  <slot>plotButton_click()</slot>
+  <slot>addCurve()</slot>
+  <slot>removeSelectedCurve()</slot>
+  <slot>clearCurve()</slot>
+  <slot>addAxis()</slot>
+  <slot>removeSelectedAxis()</slot>
+  <slot>selectTime()</slot>
+  <slot>chooseStrategy()</slot>
+  <slot>exportData()</slot>
+  <slot>exportPlotData()</slot>
+  <slot>chooseLiveTime()</slot>
+ </slots>
+ <buttongroups>
+  <buttongroup name="timeButtonGroup"/>
+ </buttongroups>
+</ui>
